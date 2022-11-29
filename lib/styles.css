@@ -10,8 +10,7 @@ body {
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
     height: fit-content;
-    min-width: 1080px;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -307,7 +306,6 @@ main {
 }
 
 .contact {
-    border: 1px solid red;
     height: 35%;
     width: 100%;
     display: flex;
@@ -414,18 +412,12 @@ footer {
 
 
 @media (max-width: 768px) {
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
     body {
         font-family: 'Pathway Gothic One', sans-serif;
         text-transform: uppercase;
         overflow-x: hidden;
         height: 262vh;    
-        max-width:  480px;
+        width:  fit-content;
         display: flex;
         justify-content: flex-start; 
     }
@@ -449,8 +441,7 @@ footer {
 
     .container {
         height: 262vh;
-        width: 480px;
-        border: 1px solid green;
+        width: 769px;
         padding: 75px 25px;
         display: flex;
         justify-content: center;
@@ -460,9 +451,10 @@ footer {
     header {
         position: absolute;
         height: 50px;
-        width: 480px;
-        border: 1px solid green;
-        padding: 25px;
+        width: 769px;
+        top: 0;
+        left: 0;
+        padding: 0px 25px;
     }
 
     .menu {
@@ -484,8 +476,8 @@ footer {
 
     .menu-burger {
         display: block;
-        height: 90%;
-        width: 8%;
+        height: 60px;
+        width: 60px;
     }
 
     .menu-burger img{
@@ -495,8 +487,9 @@ footer {
     }
 
     .title-main {
-        margin-top: 8vh;
-        height: 315px;
+        margin-top: 50px;
+        margin-left: 100px;
+        height: 215px;
         width: 100%;
     }
 
@@ -506,6 +499,8 @@ footer {
     }
 
     .text-main h2 {
+        margin-top: 50px;
+        margin-left: 45px;
         font-size: 24px;
         letter-spacing: 1px;
         color: rgba(112, 112, 112, 0.8);
@@ -734,10 +729,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 7vh;
+        height: 10vh;
         left: 0;
         width: 100vw;
-        top: 255vh;
+        top: 250vh;
     }
     
     .footer {
