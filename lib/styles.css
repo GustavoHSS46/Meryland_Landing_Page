@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    height: 350vh;
+    min-width: 1080px;
+    width: 100vw;
+    overflow-x: hidden;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.bg-body {
+    top: 20vh;
+    right: 0;
+    position: absolute;
+    z-index: -999;
+    height: clamp(400px, 40vh, 40vh);
+    width: clamp(600px, 50vw, 50vw);
+}
+
+.bg-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    height: 8vh;
+    width: 1000px;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 52px;
+    color: #707070;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.menu-function {
+    display: block;
+}
+
+.menu-burger img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-left: 25px;
+    font-size: larger;
+}
+
+main {
+    margin-top: 4vh;
+    width: 1000px;
+    height: 100vh;
+}
+
+.title-main {
+    margin-top: 16vh;
+    height: 14%;
+    width: 42%;
+}
+
+.title-main h1 {
+    font-size: 54px;
+    color: #707070;
+}
+
+.text-main h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: rgba(112, 112, 112, 0.8);
+}
+
+.text-main {
+    height: 10%;
+    width: 42%;
+}
+
+.home-btn {
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 16px;
+    background-color: #707070;
+    width: 15vw;
+    height: 7vh;
+    color: white;
+}
+
+.whitespace {
+    height: 30vh;
+    width: 50vw;
+}
+
+.whitespace-about {
+    height: 20vh;
+    width: 50vw;
+}
+
+.whitespace-contact {
+    height: 40vh;
+    width: 50vw;
+}
+
+.about { 
+    height: 85vh;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+    width: 100%;
+}
+
+.bg-about {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: -999;
+    height: 60%;
+    margin-top: 35vh;
+    left: 0vw;
+    width: 100vw;
+}
+
+.bg-about img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.awards {
+    position: absolute;
+    width: 30%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-size: 42px;
+    bottom: 14%;
+
+}
+
+.awards-won {
+    position: absolute;
+    width: 32%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    bottom: 5%;
+}
+
+.card-feature {
+    margin-top: 125px;
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #707070;
+}
+
+.img {
+    margin-top: 15px;
+    height: 50%;
+    width: 50%;
+    filter: invert(100%)
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.money h1 {
+    margin-top: 15px;
+    font-size: 48px;
+    color: white;
+}
+
+.ideas h1 {
+    margin-top: 15px;
+    font-size: 48px;
+    color: white;
+}
+
+.heart h1 {
+    margin-top: 15px;
+    font-size: 38px;
+    color: white;
+}
+
+.blog {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-blog {
+    font-size: 52px;
+}
+
+.blog-news {
+    margin-top: 50px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    height: 100%;
+    width: 48%;
+    background-color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news h1{
+    color: white;
+    font-size: 64px;
+}
+
+.description {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-news {
+    margin-top: 15px;
+    width: 48%;
+    font-size: 14px;
+}
+
+.holder {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.blog-btn {
+    height: 70%;
+    border: none;
+    border-radius: 12px;
+    width: 40%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ebdad3;
+}
+
+.blog-btn h1 {
+    font-size: 22px;
+}
+
+.blog-btn img {
+    margin-left: 15px;
+}
+
+.contact {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-txt {
+    font-size: 48px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-left: 5px;
+}
+
+.bg-contact {
+    position: absolute;
+    z-index: -999;
+    height: 35%;
+    margin-top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    background-color: #ebdad3;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    left: 0;
+    width: 100vw;
+    top: 345vh;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer img {
+    filter: invert(100%);
+    object-fit: cover;
+}
+
+.github {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    height: 20px
+}
+
+.footer-txt {
+    font-size: 12px;
+    color: white;
+}
+
+.bg-footer {
+    position: absolute;
+    z-index: -999;
+    height: 100%;
+    margin-top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Pathway Gothic One', sans-serif;
+        text-transform: uppercase;
+        overflow-x: hidden;
+        height: 262vh;
+        width: 100vw;    
+        min-width: 768px;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .bg-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        z-index: -999;
+    }
+
+    .bg-body img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        position: fixed;
+        width: 90%;
+        height: 50px;
+    }
+
+    .menu {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 42px;
+        color: #707070;
+    }
+
+    .menu-function {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+        height: 90%;
+        width: 8%;
+    }
+
+    .menu-burger img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title-main {
+        margin-top: 8vh;
+        height: 315px;
+        width: 100%;
+    }
+
+    .title-main h1 {
+        font-size: 36px;
+        color: #707070;
+    }
+
+    .text-main h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: rgba(112, 112, 112, 0.8);
+    }
+
+    .text-main {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .home-btn {
+        margin-top: 10px;
+        margin-left: 5%;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 16px;
+        background-color: #707070;
+        width: 90%;
+        height: 7vh;
+        color: white;
+    }
+
+    .whitespace {
+        height: 15vh;
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
+    }
+
+    .card-feature {
+        width: 30%;
+        height: 100%;
+        border-radius: 15px;
+        margin-top: 0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #707070;
+    }
+
+    .card-feature h1 {
+        display: none;
+    }
+
+    .img {
+        height: 45%;
+        width: 45%;
+        filter: invert(100%)
+    }
+    
+    .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .bg-about {
+        position: absolute;
+        z-index: -999;
+        height: 30%;
+        margin-top: 12vh;
+        left: 0vw;
+        width: 100vw;
+    }
+    
+    .bg-about img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .awards {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 22px;
+        bottom: 14%;
+    
+    }
+    
+    .awards-won {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 12px;
+        bottom: 8%;
+    }
+
+    .card-shadow {
+        display: none;
+    }
+
+    .card-shadow-1 {
+        display: none;
+    }
+    
+    .card-shadow-2 {
+        display: none;
+    }
+
+    .whitespace-about {
+        
+        height: 15vh;
+        width: 100%;
+    }
+
+    .blog {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title-blog {
+        font-size: 22px;
+    }
+
+    .blog-news {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news {
+        height: 100%;
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 15px;
+        background-color: #707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news h1{
+        color: white;
+        font-size: 36px;
+    }
+    
+    .description {
+        display: none;
+    }
+
+    .holder {
+        height: 6%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-btn {
+        height: 70%;
+        border: none;
+        border-radius: 12px;
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: #ebdad3;
+    }   
+
+    .blog-btn h1 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .blog-btn img {
+        margin-left: 15px;
+    }
+
+    .whitespace-contact { 
+        height: 20vh;
+        width: 100%;
+    }
+
+    .contact {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-txt {
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    .contact h1 {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .bg-contact {
+        position: absolute;
+        z-index: -999;
+        height: 20%;
+        left: 0vw;
+        width: 100vw;
+        background-color: #ebdad3;
+    }
+
+    footer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        left: 0;
+        width: 100vw;
+        top: 255vh;
+    }
+    
+    .footer {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footer img {
+        filter: invert(100%);
+        object-fit: cover;
+    }
+    
+    .github {
+        margin-left: 15px;
+        margin-bottom: 5px;
+        height: 20px
+    }
+    
+    .footer-txt {
+        font-size: 12px;
+        color: white;
+    }
+    
+    .bg-footer {
+        position: absolute;
+        z-index: -999;
+        height: 100%;
+        margin-top: 0vh;
+        left: 0vw;
+        width: 100vw;
+        background-color: black;
+    }
+}
