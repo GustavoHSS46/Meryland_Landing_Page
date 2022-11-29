@@ -9,11 +9,10 @@
 body {
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
-    height: 350vh;
+    height: fit-content;
     min-width: 1080px;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
-    
     display: flex;
     justify-content: center;
 }
@@ -308,6 +307,7 @@ main {
 }
 
 .contact {
+    border: 1px solid red;
     height: 35%;
     width: 100%;
     display: flex;
@@ -341,10 +341,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    height: 10vh;
     left: 0;
     width: 100vw;
-    top: 345vh;
 }
 
 .footer {
