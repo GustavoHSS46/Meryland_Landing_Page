@@ -411,15 +411,13 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 414px) {
     body {
-        font-family: 'Pathway Gothic One', sans-serif;
-        text-transform: uppercase;
         overflow-x: hidden;
-        height: 262vh;    
-        width:  fit-content;
+        height: 260vh;    
+        width: 100%;
         display: flex;
-        justify-content: flex-start; 
+        justify-content: center; 
     }
 
     .bg-body {
@@ -440,20 +438,21 @@ footer {
     }
 
     .container {
-        height: 262vh;
-        width: 769px;
-        padding: 75px 25px;
+        height: 100%;
+        width: 100%;
+        border: 3px solid blue;
+        padding: 25px ;
         display: flex;
         justify-content: center;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     header {
         position: absolute;
         height: 50px;
-        width: 769px;
-        top: 0;
-        left: 0;
+        width: 95vw;
+        top: 15px;
         padding: 0px 25px;
     }
 
@@ -486,33 +485,40 @@ footer {
         object-fit: cover;
     }
 
-    .title-main {
-        margin-top: 50px;
-        margin-left: 100px;
-        height: 215px;
+    main {
         width: 100%;
+        height: fit-content;
+    }
+
+    .title-main {
+        position: relative;
+        top: -105px;
+        width: fit-content;
     }
 
     .title-main h1 {
-        font-size: 36px;
+        font-size: 24px;
         color: #707070;
     }
 
     .text-main h2 {
-        margin-top: 50px;
-        margin-left: 45px;
-        font-size: 24px;
-        letter-spacing: 1px;
+        font-size: 16px;
         color: rgba(112, 112, 112, 0.8);
     }
 
     .text-main {
+        position: relative;
+        top: 95px; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
         height: fit-content;
         width: fit-content;
     }
 
     .home-btn {
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 5%;
         border-radius: 12px;
         display: flex;
@@ -522,12 +528,12 @@ footer {
         font-size: 16px;
         background-color: #707070;
         width: 90%;
-        height: 7vh;
+        height: 4vh;
         color: white;
     }
 
     .whitespace {
-        height: 15vh;
+        height: 20vh;
         width: 100%;
     }
 
@@ -561,7 +567,7 @@ footer {
 
     .img {
         height: 45%;
-        width: 45%;
+        width: 65%;
         filter: invert(100%)
     }
     
@@ -692,7 +698,7 @@ footer {
     }
 
     .whitespace-contact { 
-        height: 20vh;
+        height: 27vh;
         width: 100%;
     }
 
